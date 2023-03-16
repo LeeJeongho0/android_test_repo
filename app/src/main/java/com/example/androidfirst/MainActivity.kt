@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySub2Binding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         binding.btnClick.setOnClickListener {
