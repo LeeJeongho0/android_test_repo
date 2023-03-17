@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+연락처에 추가"
+        android:textSize="16sp"
+        android:textColor="#0EE308"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02-120"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40sp"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        <TextView android:text="1"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="2"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="3"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="4"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="6"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="7"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="8"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="9"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="*"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="0"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView android:text="#"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="80dp"
+            app:srcCompat="@drawable/kakao_talk" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="52dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/kakao_talk"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            app:srcCompat="@drawable/kakao_talk" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

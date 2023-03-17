@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <Button android:text="1번"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"/>
+        <Button android:text="2번" />
+        <Button android:text="3번" />
+        <Button android:text="4번" />
+        <Button android:text="5번" />
+        <Button android:text="6번" />
+        <Button android:text="7번" />
+        <Button android:text="8번" />
+        <Button android:text="9번" />
+        <Button android:text="10번" />
+        <Button android:text="11번"
+            android:layout_gravity="center"/>
+    </GridLayout>
+</LinearLayout>

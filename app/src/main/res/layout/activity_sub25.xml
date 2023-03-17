@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="127dp"
+        android:layout_height="92dp"
+        app:srcCompat="@drawable/kakao_talk"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        tools:layout_editor_absoluteX="144dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카카오톡"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="49dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
