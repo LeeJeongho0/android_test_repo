@@ -1,32 +1,41 @@
 package com.example.androidfirst
 
 import android.os.Bundle
-import android.util.Log
-import android.view.MotionEvent
+import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidfirst.databinding.ActivityMain4Binding
 
-class MainActivity3 : AppCompatActivity() {
+class MainActivity3 : AppCompatActivity(),CompoundButton.OnCheckedChangeListener {
     lateinit var binding: ActivityMain4Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMain4Binding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.ckbClick.setOnCheckedChangeListener(this)
+        binding.ckbClick2.setOnCheckedChangeListener(this)
+
+        binding.ckbClick3.setOnCheckedChangeListener(object :
+            CompoundButton.OnCheckedChangeListener {
+            override fun onCheckedChanged(buttonView: CompoundButton?, isChecked: Boolean) {
+                Toast.makeText(applicationContext, "3번 체크박스", Toast.LENGTH_SHORT).show()
+            }
+        })
+        binding.ckbClick4.setOnCheckedChangeListener { buttonView: CompoundButton?, isChecked: Boolean ->
+            Toast.makeText(applicationContext, "4번 체크박스", Toast.LENGTH_SHORT).show()
+        }
     }
 
-    override fun onTouchEvent(event: MotionEvent?): Boolean {
-        when (event?.action) {
-            MotionEvent.ACTION_DOWN -> {
-                Toast.makeText(applicationContext, "터치를 했습니다", Toast.LENGTH_SHORT).show()
-                Log.d("MainActivity3","터치클릭 x = ${event?.x} rawx = ${event?.rawX}")
-            }
-            MotionEvent.ACTION_UP -> {
-                Toast.makeText(applicationContext, "터치를 해제 했습니다", Toast.LENGTH_SHORT).show()
-                Log.d("MainActivity3","터치를 해제 했습니다")
-            }
+    override fun onCheckedChanged(buttonView: CompoundButton?, isChecked: Boolean) {
+        when(buttonView?.id){
+            R.id.ckbClick -> Toast.makeText(applicationContext,"1번 체크박스",Toast.LENGTH_SHORT).show()
+            R.id.ckbClick2 -> Toast.makeText(applicationContext,"2번 체크박스",Toast.LENGTH_SHORT).show()
         }
-
-        return super.onTouchEvent(event)
     }
 }
+
+
+
+
+
