@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">androidFirst</string>
     <string name="app_btn1">클릭하기</string>
@@ -13,8 +14,8 @@
     <string name="btn_reset">RESET</string>
     <string name="btn_back">Click in 3 seconds and you will be out</string>
     <string name="txt_status">상태메시지</string>
-    <string name="txt_blabla">안녕하세요 반가워요</string>
-    <string name="txt_blabla2">감사합니다 다음에 또 이용해주세요</string>
-    <string name="txt_language">설정</string>
-    <string name="txt_msg">나중에 하기</string>
+    <string name="txt_blabla">Good morning. Nice to meet you.</string>
+    <string name="txt_blabla2">Thank you. Please use it again next time</string>
+    <string name="txt_language">TURN ON</string>
+    <string name="txt_msg">NOT NOW</string>
 </resources>
