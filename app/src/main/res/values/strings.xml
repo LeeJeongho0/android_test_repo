@@ -8,4 +8,9 @@
     <string name="app_message2">비밀번호가 기억나지 않으세요?</string>
     <string name="app_message3">비밀번호</string>
     <string name="app_btnok">확인</string>
+    <string name="btn_start">START</string>
+    <string name="btn_stop">STOP</string>
+    <string name="btn_reset">RESET</string>
+    <string name="btn_back">Click in 3 seconds and you will be out</string>
+    <string name="txt_status">상태메시지</string>
 </resources>

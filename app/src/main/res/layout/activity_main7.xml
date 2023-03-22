@@ -13,6 +13,30 @@
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:layout_marginTop="100dp"/>
+    <ImageView
+        android:id="@+id/ivGradation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@android:drawable/alert_dark_frame"
+        android:layout_below="@id/chronometer"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        style="@style/MyTextStyleSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivGradation"
+        android:layout_margin="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="button status"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,16 +48,20 @@
             android:id="@+id/btnStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="start"
+            android:text="@string/btn_start"
+            android:background="@drawable/round_button"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
+            android:textSize="@dimen/txt_medium"
+            android:textColor="@color/button_color"/>
         <Button
             android:id="@+id/btnStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="stop"
+            android:text="@string/btn_stop"
+            android:background="@drawable/round_button"
             android:textStyle="bold"
+            android:textSize="@dimen/txt_medium"
             android:enabled="false"
             android:textColor="#FFFFFF"/>
         <Button
@@ -41,8 +69,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="reset"
+            android:text="@string/btn_reset"
+            android:background="@drawable/round_button"
             android:textStyle="bold"
+            android:textSize="@dimen/txt_medium"
             android:enabled="false"
             android:textColor="#FFFFFF"/>
     </LinearLayout>

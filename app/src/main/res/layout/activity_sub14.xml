@@ -16,5 +16,5 @@
         android:background="#EC4908"
         android:maxWidth="400dp"
         android:maxHeight="400dp"
-        app:srcCompat="@drawable/nature" />
+        app:srcCompat="@drawable/nature01" />
 </LinearLayout>
