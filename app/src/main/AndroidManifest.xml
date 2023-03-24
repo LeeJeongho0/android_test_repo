@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,11 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFirst"
         tools:targetApi="31">
+        <receiver
+            android:name=".OneReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
         <activity
-            android:name=".MainActivity8"
+            android:name=".DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity9"
+            android:name=".MainActivity10"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +32,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity8"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity9"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity7"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity6"
             android:exported="true" />

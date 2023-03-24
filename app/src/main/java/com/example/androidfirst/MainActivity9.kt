@@ -3,6 +3,9 @@ package com.example.androidfirst
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.DialogInterface
+import android.content.pm.PackageManager
+import android.media.RingtoneManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.Gravity
@@ -13,6 +16,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.androidfirst.databinding.ActivityMain10Binding
 import com.example.androidfirst.databinding.RegisterLayoutBinding
 import com.example.androidfirst.databinding.ToastLayoutBinding
@@ -32,6 +36,8 @@ class MainActivity9 : AppCompatActivity(), View.OnClickListener, DatePickerDialo
         binding.btnMultiItemDialog.setOnClickListener(this)
         binding.btnSingleItemDialog.setOnClickListener(this)
         binding.btnCustomDialog.setOnClickListener(this)
+        binding.btnFindLocate.setOnClickListener(this)
+        binding.btnRington.setOnClickListener(this)
 
     }
 
@@ -155,6 +161,21 @@ class MainActivity9 : AppCompatActivity(), View.OnClickListener, DatePickerDialo
                     userDialog.dismiss()
                 }
 
+            }
+            R.id.btnFindLocate -> {
+                val state = ContextCompat.checkSelfPermission(applicationContext, "android.permission.ACCESS_FINE_LOCATION")
+                if(state == PackageManager.PERMISSION_GRANTED){
+                    binding.tvMessage.text = "위치추적권한허용"
+                }else{
+                    binding.tvMessage.text = "위치추적권한불허"
+                }
+            }
+            R.id.btnRington -> {
+                //Uniform Resource Identifer, 리소스를 구분하는 식별자.
+                //안드로이드에서 URI의 역할은 리소스(외부 앱, 이미지, 텍스트 등)에 접근할 수 있는 식발자 역할
+                val notificationUri: Uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+                val rington = RingtoneManager.getRingtone(applicationContext, notificationUri)
+                rington.play()
             }
         }
     }

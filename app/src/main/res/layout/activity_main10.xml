@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="20dp"/>
     <Button
         android:id="@+id/btnDate"
         android:layout_width="wrap_content"
@@ -77,6 +77,24 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@id/btnSingleItemDialog"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btnFindLocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위치추적검사하기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnCustomDialog"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btnRington"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소리듣기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnFindLocate"
         android:layout_centerInParent="true"/>
     <TextView
         android:id="@+id/tvMessage"
